@@ -1,41 +1,31 @@
 module.exports = {
-  title: 'Mediumish',
+  title: 'xdorro\'s blog',
   base: '/',
-  description: 'Blog example for Mediumish theme with VuePress',
+  description: 'Blog cá nhân của xdorro',
   logo: './assets/img/logo.png',
   theme: require.resolve('../../'),
+  head: [
+    // <meta name="google-site-verification" content="GlKV5sSgZMfOOPLgfvVA4_r8Wsdsgy6pHp-OzrkCLPQ" />
+    ['meta', {name: 'google-site-verification', content: 'GlKV5sSgZMfOOPLgfvVA4_r8Wsdsgy6pHp-OzrkCLPQ'}],
+  ],
   themeConfig: {
-  authors: [
+    authors: [
       {
-      name: 'Sal',
-      avatar: '/assets/img/sal.jpg',
-      link: 'https://wowthemes.net/donate',
-      linktext: 'Follow',
-      },
-      {
-        name: 'John Doe',
-        avatar: '/assets/img/avatar.png',
-        link: 'https://bootstrapstarter.com/',
-        linktext: 'Follow',
+        name: 'xdorro',
+        avatar: '/assets/img/xdorro.jpg',
+        link: 'https://github.com/xdorro',
+        linktext: 'Theo dõi',
       },
     ],
     footer: {
       contact: [
         {
-          type: 'codepen',
-          link: '#',
-        },
-        {
           type: 'facebook',
-          link: '#',
+          link: 'https://www.facebook.com/xdorro',
         },
         {
           type: 'github',
-          link: 'https://github.com/wowthemesnet/mediumish-vuepress-blog-theme',
-        },
-        {
-          type: 'gitlab',
-          link: '#',
+          link: 'https://github.com/xdorro',
         },
         {
           type: 'instagram',
@@ -45,51 +35,23 @@ module.exports = {
           type: 'linkedin',
           link: '#',
         },
-        {
-          type: 'mail',
-          link: '#',
-        },
-        {
-          type: 'messenger',
-          link: '#',
-        },
-        {
-          type: 'phone',
-          link: '#',
-        },
-        {
-          type: 'twitter',
-          link: 'https://twitter.com/wowthemesnet',
-        },
-        {
-          type: 'web',
-          link: '#',
-        }
       ],
       copyright: [
         {
-          text: 'Licensed MIT.',
-          link: 'https://bootstrapstarter.com/license/',
-        },
-        {
-          text: 'Made with Mediumish - free Vuepress theme',
-          link: 'https://bootstrapstarter.com/bootstrap-templates/vuepress-theme-mediumish/',
+          text: 'Nguyen Manh Tuan Anh',
+          link: 'https://github.com/xdorro',
         },
       ],
     },
-
     sitemap: {
-      hostname: 'https://github.com/xdorro/vuepress-xdorro-blog/'
+      hostname: 'https://xdorro.github.io/'
     },
     comment: {
       service: 'disqus',
       shortname: 'demowebsite',
     },
-    newsletter: {
-      endpoint: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&id=8c3d2d214b'
-    },
     feed: {
-      canonical_base: 'https://github.com/xdorro/vuepress-xdorro-blog/',
+      canonical_base: 'https://xdorro.github.io/',
     },
     smoothScroll: true
   },

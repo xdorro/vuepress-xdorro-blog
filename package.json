@@ -26,8 +26,8 @@
     "components"
   ],
   "scripts": {
-    "build": "vuepress build docs --temp docs/.temp",
-    "dev": "vuepress dev docs --temp docs/.temp",
+    "build": "vuepress build docs",
+    "dev": "vuepress dev docs",
     "lint": "eslint . --ext .js,.vue",
     "prepublishOnly": "yarn test && yarn build && conventional-changelog -p angular -r 2 -i CHANGELOG.md -s",
     "test": "jest"

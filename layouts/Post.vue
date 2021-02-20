@@ -59,7 +59,6 @@ export default {
     PostMeta,
     Avatar,
     Comment,
-    Newsletter: () => import('@theme/components/Newsletter.vue'),
   },
 }
 </script>

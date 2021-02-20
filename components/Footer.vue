@@ -4,7 +4,7 @@
       <div class="row justify-content-between">
         <div class="col">
           <a href="/"
-            ><img class="logofooter" :src="$withBase($themeConfig.logo)"
+            ><img :src="$withBase($themeConfig.logo)" class="logofooter"
           /></a>
         </div>
         <div class="col text-right">
@@ -36,33 +36,11 @@
 </template>
 
 <script>
-import {
-  CodepenIcon,
-  FacebookIcon,
-  GithubIcon,
-  GitlabIcon,
-  GlobeIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  MailIcon,
-  MessageSquareIcon,
-  PhoneIcon,
-  TwitterIcon,
-} from 'vue-feather-icons'
+import { GithubIcon } from 'vue-feather-icons'
 
 export default {
   components: {
-    CodepenIcon,
-    FacebookIcon,
     GithubIcon,
-    GitlabIcon,
-    GlobeIcon,
-    InstagramIcon,
-    LinkedinIcon,
-    MailIcon,
-    MessageSquareIcon,
-    PhoneIcon,
-    TwitterIcon,
   },
 
   computed: {
