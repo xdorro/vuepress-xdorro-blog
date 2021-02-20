@@ -1,9 +1,9 @@
 <template>
   <component
     :is="tag || 'div'"
-    class="sticker"
     :class="needFloat ? ['stick-float'] : undefined"
     :style="needFloat ? { bottom: `${stickBottom}px` } : undefined"
+    class="sticker"
   >
     <slot></slot>
   </component>
@@ -11,6 +11,7 @@
 
 <script>
 import { findContainerInVm } from './util'
+
 export default {
   props: ['stick', 'tag'],
 
